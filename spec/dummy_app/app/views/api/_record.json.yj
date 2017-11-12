@@ -1,0 +1,2 @@
+a: <%= record[:a] %>
+b: <%= record[:b] %>

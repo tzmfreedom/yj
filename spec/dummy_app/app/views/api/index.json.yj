@@ -1,0 +1,9 @@
+string_property: <%= @string %>
+integer_property: 123
+array_property:
+<% @integers.each do |item| -%>
+- <%= item %>
+<% end -%>
+object_property:
+  single_partial: <%= r.(partial: 'api/record', locals: { record: { a: 123, b: 100 } })%>
+  collection_partial: <%= r.(partial: 'api/record', collection: @records, as: :record) %>
