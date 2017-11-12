@@ -7,3 +7,4 @@ gemspec
 
 gem 'jbuilder'
 gem 'benchmark-ips'
+gem 'stackprof'
