@@ -34,7 +34,7 @@ object_property:
 ```
 
 This response is following
-```json
+```javascript
 {
   "string_property": "string",
   "integer_property": 123,
