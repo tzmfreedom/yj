@@ -55,7 +55,7 @@ This response is following
         "a": 123,
         "b": 234
       },
-      ...
+      # ...
     ]
   }
 }
