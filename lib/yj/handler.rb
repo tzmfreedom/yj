@@ -11,7 +11,7 @@ module Yj
       <<~SRC
       _partial ||= false
       r ||= Yj::Render.new(self)
-      yaml = ERB.new("#{template.source}", nil, '-').result(binding)
+      yaml = ERB.new(%{#{template.source}}, nil, '-').result(binding)
       return MultiJson.dump(YAML.load(yaml)) unless _partial
       yaml.each_line.with_index.map do |line, idx|
         idx == 0 ? "- \#{line}" : "  \#{line}"
