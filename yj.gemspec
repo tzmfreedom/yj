@@ -6,11 +6,11 @@ require "yj/version"
 Gem::Specification.new do |spec|
   spec.name          = "yj"
   spec.version       = Yj::VERSION
-  spec.authors       = ["tzmfreedom"]
+  spec.authors       = ["Makoto Tajitsu"]
   spec.email         = ["makoto_tajitsu@hotmail.co.jp"]
 
-  spec.summary       = %q{JSON Builder with YAML}
-  spec.description   = %q{JSON Builder with YAML}
+  spec.summary       = %q{Rails JSON View Builder with YAML and ERB}
+  spec.description   = %q{Rails JSON View Builder with YAML and ERB}
   spec.homepage      = "http://github.com/tzmfreedom/yj"
   spec.license       = "MIT"
 
@@ -29,6 +29,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "multi_json"
 
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
