@@ -1,7 +1,6 @@
 # Yj
 
 Rails JSON View Builder with YAML and ERB.
-On some condition, Yj is faster than jBuilder.
 
 ## Installation
 
